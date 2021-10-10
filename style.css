@@ -2,15 +2,18 @@
 
 *{
     font-family: 'Josefin Sans', sans-serif;
-    padding: 0;
-    margin: 0;
 }
+
 body{
-    background: url('./images/bg-pattern-desktop.svg') no-repeat;
+    background: url('./images/bg-pattern-desktop.svg');
 }
 
 .picture{
     float: right;
+}
+
+#mobilePicture{
+    display: none;
 }
 
 .content{
@@ -18,7 +21,7 @@ body{
 }
 
 #logo{
-    margin-bottom: 135px;
+    margin-bottom: 100px;
 }
 
 h1{
@@ -52,7 +55,6 @@ p{
     margin: 5px;
     padding-left: 30px;
     color: hsl(0, 93%, 68%);
-
 }
 
 .hidden{
@@ -100,4 +102,57 @@ button:hover{
 
 
 
+@media screen and (max-width: 500px) {
+    .picture{
+        display: none;
+    }
 
+    #mobilePicture{
+        display: initial;
+        padding-bottom: 40px;
+        align-self: stretch;
+        
+    }
+
+    body{
+        margin: 0px;
+        background: linear-gradient(#fffdfe, #fff7f8);
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        width: 100%;
+     }
+
+     #logo{
+        margin: 15px;
+        width: 150px;
+        padding: 0px 0px 30px 30px;
+        align-self: flex-start;
+    }
+
+    h1{
+        width: 300px;
+        text-align: center;
+    }
+
+    p{
+        width: 350px;
+        margin: 0;
+        text-align: center;
+    }
+
+    #mailForm{
+        position: initial;
+        margin-left: 15px;
+        
+    }
+
+    button{
+    left: 374px;
+    top: -58px;
+    }
+}
