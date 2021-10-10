@@ -6,10 +6,12 @@
 
 body{
     background: url('./images/bg-pattern-desktop.svg');
+    margin: 0;
 }
 
 .picture{
     float: right;
+    
 }
 
 #mobilePicture{
@@ -84,7 +86,7 @@ input:focus{
 
 button{
     width: 100px;
-    height: 57px;
+    height: 59px;
     border-radius: 50px ;
     position: relative;
     left : -100px;
