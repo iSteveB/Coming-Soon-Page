@@ -154,7 +154,19 @@ button:hover{
     }
 
     button{
-    left: 374px;
-    top: -58px;
+    left: 375px;
+    top: -59px;
     }
+
+    #mailForm > img{
+        top: -55px;
+        left: 230px;
+    }
+
+    #mailForm p{
+        position: relative;
+        left: -80px;
+        top: -55px;
+    }
+
 }

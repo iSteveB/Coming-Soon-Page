@@ -8,13 +8,15 @@ const emailChecker = (value) => {
     if(!value.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)){
         
         document.querySelector("input").classList.add("error");
-        document.querySelector("form > p").classList.remove ("hidden");
+        document.querySelector("form > p").classList.remove("hidden");
+        document.querySelector("form > img").classList.remove("hidden");
         email = null;
         
     } else {
         
         document.querySelector("input").classList.remove("error");
         document.querySelector("form > p").classList.add("hidden");
+        document.querySelector("form > img").classList.add("hidden");
         email = value;
     };
 };
